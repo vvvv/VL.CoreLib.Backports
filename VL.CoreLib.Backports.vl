@@ -1,0 +1,280 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Document xmlns:p="property" Id="TuCXwYeZ7HLMA9vpGoib3f" LanguageVersion="2021.3.3.131" Version="0.128">
+  <NugetDependency Id="PVIDmcxubDAPLKTAcaq7LI" Location="VL.CoreLib" Version="2021.3.3" />
+  <Patch Id="D1MGJLxAF7AP7xUEkUsqnV">
+    <Canvas Id="Eg3a7j6eSD4QBvO1T6vjaf" DefaultCategory="Backports" CanvasType="FullCategory">
+      <Canvas Id="FIZWpKpLBxuNFmBV9qRFGs" Name="System.Serialization.Volatile.Advanced" Position="263,190">
+        <!--
+
+    ************************ Deserialize (Binary) ************************
+
+-->
+        <Node Name="Deserialize (Binary)" Bounds="312,180,189,74" Id="P4PUuU9UnWnNP5SiGgIWBR">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">true</p:HideCategory>
+          <Patch Id="NUJ3T26OV65N1NrONDLlZ2" IsGeneric="true">
+            <Node Bounds="324,215,10,10" AutoConnect="true" Id="DuGcqvvm5pVPoZFmwSEVq2">
+              <p:NodeReference LastCategoryFullName="VL.Lib.Backports.Serialization" LastSymbolSource="VL.CoreLib.Backports.dll">
+                <Choice Kind="OperationNode" Name="DeserializeBinary" />
+                <FullNameCategoryReference ID="VL.Lib.Backports.Serialization" />
+              </p:NodeReference>
+              <Pin Id="Fi758MaZU6QPQokuiD0pwR" Name="Serialized Value" Kind="InputPin" />
+              <Pin Id="MhTFSheU9NMP3DpYIyrffa" Name="Force Little Endian" Kind="InputPin" />
+              <Pin Id="PzzTOQHsrrfNzGYU4kJvlj" Name="Node Context" Kind="InputPin" />
+              <Pin Id="OskM7V6Zm8rN7Nr37tlOOB" Name="Result" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="LClVta8pSxjNZWK9U0E0cv" Bounds="415,198" />
+            <Link Id="G7LIy8COddWLXtSzOddQ3a" Ids="LClVta8pSxjNZWK9U0E0cv,PzzTOQHsrrfNzGYU4kJvlj" />
+            <Link Id="DbDP5D4drTLLMcHoJeNop8" Ids="KQyE6DnzLt9QcYSkVg1c97,LClVta8pSxjNZWK9U0E0cv" IsHidden="true" />
+            <Pin Id="KQyE6DnzLt9QcYSkVg1c97" Name="Node Context" Kind="InputPin" Bounds="414,192" Visibility="Hidden" />
+            <Pin Id="V2rrGNjHnaLMAXZ6VD5ekB" Name="Serialized Value" Kind="InputPin" />
+            <Pin Id="RG6pNQmF6F3LHqmO85dVaG" Name="Force Little Endian" Kind="InputPin" />
+            <Pin Id="KziHC8ck2RvNN4T5wjdOJV" Name="Result" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ Deserialize (Bson) ************************
+
+-->
+        <Node Name="Deserialize (Bson)" Bounds="592,178,177,76" Id="Tp4a4xYFGQYP1oQClL7nb3">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">true</p:HideCategory>
+          <Patch Id="A1R1PSXWYEtQV09wILUqKc" IsGeneric="true">
+            <Node Bounds="604,215,10,10" AutoConnect="true" Id="MDYjFSA7KauPXdLl5fzYIw">
+              <p:NodeReference LastCategoryFullName="VL.Lib.Backports.Serialization" LastSymbolSource="VL.CoreLib.Backports.dll">
+                <Choice Kind="OperationNode" Name="DeserializeBson" />
+                <FullNameCategoryReference ID="VL.Lib.Backports.Serialization" />
+              </p:NodeReference>
+              <Pin Id="VR3zp3AaaDQLC49IsBCV5b" Name="Serialized Value" Kind="InputPin" />
+              <Pin Id="H0Bzc4yZahEL1e8dfVAFYW" Name="Node Context" Kind="InputPin" />
+              <Pin Id="Ddqkk1oqTSIOxncEUCKdJp" Name="Result" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="DlidS7cckVjOgVSoycvsvO" Bounds="683,196" />
+            <Link Id="CP2hSOf76dHPoQnmCKUiF9" Ids="UEQHahrmQbWPadKhb4hKK9,DlidS7cckVjOgVSoycvsvO" IsHidden="true" />
+            <Link Id="T9c4wZpX0PkOC8ubxDtgwx" Ids="DlidS7cckVjOgVSoycvsvO,H0Bzc4yZahEL1e8dfVAFYW" />
+            <Pin Id="UEQHahrmQbWPadKhb4hKK9" Name="Node Context" Kind="InputPin" Visibility="Hidden" />
+            <Pin Id="R78p6IiRJCRMDTtFHeb2HD" Name="Serialized Value" Kind="InputPin" />
+            <Pin Id="PXVSvP27pZqPR7dC7Rc1dd" Name="Result" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ Deserialize (Json) ************************
+
+-->
+        <Node Name="Deserialize (Json)" Bounds="312,330,177,74" Id="VHgnVYamn71QDmsR0gKc5b">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">true</p:HideCategory>
+          <Patch Id="CticPnjgRtPNEfNJ9nNlCD" IsGeneric="true">
+            <Node Bounds="324,365,10,10" AutoConnect="true" Id="OptuUyWAkTFQTW2CiVoe4K">
+              <p:NodeReference LastCategoryFullName="VL.Lib.Backports.Serialization" LastSymbolSource="VL.CoreLib.Backports.dll">
+                <Choice Kind="OperationNode" Name="DeserializeJson" />
+                <FullNameCategoryReference ID="VL.Lib.Backports.Serialization" />
+              </p:NodeReference>
+              <Pin Id="MGYaSsJDWB7QYFzDtYpmDf" Name="Serialized Value" Kind="InputPin" />
+              <Pin Id="BZSeIyRVwN4NcmjjIomRBD" Name="Indent" Kind="InputPin" />
+              <Pin Id="BQ5abRUVJDxPJcQcZebTsj" Name="Omit Header" Kind="InputPin" />
+              <Pin Id="NHP2MobTfbsQEM0sVanvUS" Name="Node Context" Kind="InputPin" />
+              <Pin Id="DA6MKng6IFfO50lIech0Xe" Name="Result" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="F9dJpBJ6qBGMscTvxYiMY3" Bounds="403,348" />
+            <Link Id="PIkne13iwDJPM9qMmbY1ye" Ids="P8LukAGfbBwLgU1lpbMBxq,F9dJpBJ6qBGMscTvxYiMY3" IsHidden="true" />
+            <Link Id="RtqUXObvXj6NwvrWtebDhG" Ids="F9dJpBJ6qBGMscTvxYiMY3,NHP2MobTfbsQEM0sVanvUS" />
+            <Pin Id="P8LukAGfbBwLgU1lpbMBxq" Name="Node Context" Kind="InputPin" Visibility="Hidden" />
+            <Pin Id="MrzCXXPY6JhLZhqPKgxyqf" Name="Serialized Value" Kind="InputPin" />
+            <Pin Id="MuJJ71yQ5VNPOuqIaf3JX8" Name="Indent" Kind="InputPin" />
+            <Pin Id="LvdMrEvM7GWLGD0HPgwCWc" Name="Omit Header" Kind="InputPin" />
+            <Pin Id="EjXJsTYOK1XLiQhYpC94nF" Name="Result" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ Deserialize (Xml) ************************
+
+-->
+        <Node Name="Deserialize (Xml)" Bounds="592,333,177,71" Id="GO24ZzkKLFXMZaJKlREzvI">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">true</p:HideCategory>
+          <Patch Id="FGvcHJYS705OpkGACEgMkC" IsGeneric="true">
+            <Node Bounds="604,365,10,10" AutoConnect="true" Id="ApS0Wr90lN4Pth4oRZnxu7">
+              <p:NodeReference LastCategoryFullName="VL.Lib.Backports.Serialization" LastSymbolSource="VL.CoreLib.Backports.dll">
+                <Choice Kind="OperationNode" Name="DeserializeXml" />
+                <FullNameCategoryReference ID="VL.Lib.Backports.Serialization" />
+              </p:NodeReference>
+              <Pin Id="QHuwzxptvsYL1CFqvmrB4c" Name="Serialized Value" Kind="InputPin" />
+              <Pin Id="EQgyMdmXbwtL55GiROIHgI" Name="Indent" Kind="InputPin" />
+              <Pin Id="Kr6I1rOZtKxPtcc7d4mnyy" Name="Node Context" Kind="InputPin" />
+              <Pin Id="Ait2JM2nlDRQTfkhAZlN97" Name="Result" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="NiGgaLX2xnyPBO3zOQymqM" Bounds="683,351" />
+            <Link Id="GibiwAH7gdnMPIl6W1ZjKh" Ids="HBbpbO1uBUQLYE8fe216Os,NiGgaLX2xnyPBO3zOQymqM" IsHidden="true" />
+            <Link Id="HpRTWHA9CxwMXIiOoxogaV" Ids="NiGgaLX2xnyPBO3zOQymqM,Kr6I1rOZtKxPtcc7d4mnyy" />
+            <Pin Id="HBbpbO1uBUQLYE8fe216Os" Name="Node Context" Kind="InputPin" Visibility="Hidden" />
+            <Pin Id="LAEBxKq4gq9NFlT8i5WaFI" Name="Serialized Value" Kind="InputPin" />
+            <Pin Id="JL8MHpljOdvPHz2EV3xXPg" Name="Indent" Kind="InputPin" />
+            <Pin Id="QGn2L0zOi0mOawV5sOR2GV" Name="Result" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ Serialize (Binary) ************************
+
+-->
+        <Node Name="Serialize (Binary)" Bounds="312,475,174,79" Id="NEiJXlcGFxnMqYBGaG7AQ4">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">true</p:HideCategory>
+          <Patch Id="LAp7izhpmBDOBANszHy9e5" IsGeneric="true">
+            <Node Bounds="324,515,10,10" AutoConnect="true" Id="S4C2sCeWs4YOTskulk5W2q">
+              <p:NodeReference LastCategoryFullName="VL.Lib.Backports.Serialization" LastSymbolSource="VL.CoreLib.Backports.dll">
+                <Choice Kind="OperationNode" Name="SerializeBinary" />
+                <FullNameCategoryReference ID="VL.Lib.Backports.Serialization" />
+              </p:NodeReference>
+              <Pin Id="EBLGf91YmYrO880CILdoEV" Name="Value" Kind="InputPin" />
+              <Pin Id="LzOtAVG65UgMpyeiMY6Jus" Name="Force Little Endian" Kind="InputPin" />
+              <Pin Id="PzpoDAyEGSNMRnrbAPAIMC" Name="Node Context" Kind="InputPin" />
+              <Pin Id="PjfSONbq6ErLeKTbPjQR52" Name="Result" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="HC18y1YM9BUPW6pacBy2Es" Bounds="400,493" />
+            <Link Id="FLMcxTSajnWQIu58j5cj69" Ids="P4zxHfJHW6rPYJvwbNbWWd,HC18y1YM9BUPW6pacBy2Es" IsHidden="true" />
+            <Link Id="FGR5GjcYeqLPiDV9sFwncG" Ids="HC18y1YM9BUPW6pacBy2Es,PzpoDAyEGSNMRnrbAPAIMC" />
+            <Pin Id="P4zxHfJHW6rPYJvwbNbWWd" Name="Node Context" Kind="InputPin" Visibility="Hidden" />
+            <Pin Id="QwWhQZBb0YVM3dhLSyBvya" Name="Value" Kind="InputPin" />
+            <Pin Id="IVwikWRk1ymOO2Vmw2Nqx8" Name="Force Little Endian" Kind="InputPin" />
+            <Pin Id="IKb8cB3MYczNoYuZ1FkD8j" Name="Result" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ Serialize (Bson) ************************
+
+-->
+        <Node Name="Serialize (Bson)" Bounds="592,478,171,76" Id="QGzGf8zMmbQN8lclnhegOb">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">true</p:HideCategory>
+          <Patch Id="H7kDF5MzogmLQPIuBDEHvw" IsGeneric="true">
+            <Node Bounds="604,515,10,10" AutoConnect="true" Id="BIEuCaDU8W0Ms5H6cSPd4U">
+              <p:NodeReference LastCategoryFullName="VL.Lib.Backports.Serialization" LastSymbolSource="VL.CoreLib.Backports.dll">
+                <Choice Kind="OperationNode" Name="SerializeBson" />
+                <FullNameCategoryReference ID="VL.Lib.Backports.Serialization" />
+              </p:NodeReference>
+              <Pin Id="K4A1SNuBJUYLqn9cmelHah" Name="Value" Kind="InputPin" />
+              <Pin Id="ToPOe4zVOxxMI7k7TGrCWv" Name="Node Context" Kind="InputPin" />
+              <Pin Id="J47EvVPkYUmPZGs6x6F6fr" Name="Result" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="Ktc5O4cUFAPMEizkrli8Hy" Bounds="677,496" />
+            <Link Id="Q63OhfaEmPtOMT4ywUlQ82" Ids="VJec2l3YmRBN4v2El8A3uC,Ktc5O4cUFAPMEizkrli8Hy" IsHidden="true" />
+            <Link Id="IpxemQCYXUvQER8chLWlkw" Ids="Ktc5O4cUFAPMEizkrli8Hy,ToPOe4zVOxxMI7k7TGrCWv" />
+            <Pin Id="VJec2l3YmRBN4v2El8A3uC" Name="Node Context" Kind="InputPin" Visibility="Hidden" />
+            <Pin Id="Uijeu0bvkatOkdpiahgeKB" Name="Value" Kind="InputPin" />
+            <Pin Id="AflyZU9ie3BOc62GTbr73i" Name="Result" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ Serialize (Json) ************************
+
+-->
+        <Node Name="Serialize (Json)" Bounds="312,629,171,75" Id="EVHY3yhlxloO3JRbMUnIgk">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">true</p:HideCategory>
+          <Patch Id="IZtCnWEXlyKPoqJxlNUn5F" IsGeneric="true">
+            <Node Bounds="324,665,10,10" AutoConnect="true" Id="CeVanLy9wk9LRHiONIFoIN">
+              <p:NodeReference LastCategoryFullName="VL.Lib.Backports.Serialization" LastSymbolSource="VL.CoreLib.Backports.dll">
+                <Choice Kind="OperationNode" Name="SerializeJson" />
+                <FullNameCategoryReference ID="VL.Lib.Backports.Serialization" />
+              </p:NodeReference>
+              <Pin Id="NlAzadgOuv2OK441dzEleU" Name="Value" Kind="InputPin" />
+              <Pin Id="HEbe43jtwv8M694MFVNpnJ" Name="Indent" Kind="InputPin" />
+              <Pin Id="U7pznFsszrSQMrG9I3VSRw" Name="Omit Header" Kind="InputPin" />
+              <Pin Id="Q1Zk5BWnzuUOOKOOLNkxYB" Name="Node Context" Kind="InputPin" />
+              <Pin Id="J9EyQSIfIouMOwnzwIQHSu" Name="Result" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="BHWoW5M4Z35N2SWNMBoHIm" Bounds="397,647" />
+            <Link Id="UjmnGwvV3djLeHPNZxg95J" Ids="QCeqdX3i4r8LwTq3AWg377,BHWoW5M4Z35N2SWNMBoHIm" IsHidden="true" />
+            <Link Id="HrWwkt4lOqxN8lCE80SupI" Ids="BHWoW5M4Z35N2SWNMBoHIm,Q1Zk5BWnzuUOOKOOLNkxYB" />
+            <Pin Id="QCeqdX3i4r8LwTq3AWg377" Name="Node Context" Kind="InputPin" Visibility="Hidden" />
+            <Pin Id="OpN8Xu9F9TSPIRu8Mvf4En" Name="Value" Kind="InputPin" />
+            <Pin Id="Fggk4JgGVqWPSzWdKi8xTv" Name="Indent" Kind="InputPin" />
+            <Pin Id="S8mUmyI8okUO1gSgesMztO" Name="Omit Header" Kind="InputPin" />
+            <Pin Id="INqD2V4wSbYOEKPL5lbIaU" Name="Result" Kind="OutputPin" />
+          </Patch>
+        </Node>
+        <!--
+
+    ************************ Serialize (Xml) ************************
+
+-->
+        <Node Name="Serialize (Xml)" Bounds="592,628,166,76" Id="RbDBfzFYm62NZQAuK2LHpu">
+          <p:NodeReference>
+            <Choice Kind="OperationDefinition" Name="Operation" />
+            <FullNameCategoryReference ID="Primitive" />
+          </p:NodeReference>
+          <p:HideCategory p:Type="Boolean">true</p:HideCategory>
+          <Patch Id="ENkt3RTP28KQRysCy6D71r" IsGeneric="true">
+            <Node Bounds="604,665,10,10" AutoConnect="true" Id="Lop7TPxTOJPMTzd0xAWkyG">
+              <p:NodeReference LastCategoryFullName="VL.Lib.Backports.Serialization" LastSymbolSource="VL.CoreLib.Backports.dll">
+                <Choice Kind="OperationNode" Name="SerializeXml" />
+                <FullNameCategoryReference ID="VL.Lib.Backports.Serialization" />
+              </p:NodeReference>
+              <Pin Id="GuLYTu8dGuwPkadytwFM2P" Name="Value" Kind="InputPin" />
+              <Pin Id="KG3mcT6fpqzMil4B29tttA" Name="Indent" Kind="InputPin" />
+              <Pin Id="NAvJo0gn4TCMfIoeeklPEA" Name="Node Context" Kind="InputPin" />
+              <Pin Id="SVWDOT4AOMAMFfW4hZ8KYF" Name="Result" Kind="OutputPin" />
+            </Node>
+            <ControlPoint Id="OkWCFv3TLDkMEmYgCXK3JF" Bounds="672,646" />
+            <Link Id="QWqUeVX8z59P85zTVszuf6" Ids="PrJAEpG1LnZOBPZ5yuFAkM,OkWCFv3TLDkMEmYgCXK3JF" IsHidden="true" />
+            <Link Id="FocebYDDbtXMKpDVXtE2pW" Ids="OkWCFv3TLDkMEmYgCXK3JF,NAvJo0gn4TCMfIoeeklPEA" />
+            <Pin Id="PrJAEpG1LnZOBPZ5yuFAkM" Name="Node Context" Kind="InputPin" Visibility="Hidden" />
+            <Pin Id="F1sGs8JF63fLdDLLCMbKcg" Name="Value" Kind="InputPin" />
+            <Pin Id="Nmu50R2IEbrOYk82WS3pvA" Name="Indent" Kind="InputPin" />
+            <Pin Id="H2Bl2TRf1b0QYmnidQ3qWQ" Name="Result" Kind="OutputPin" />
+          </Patch>
+        </Node>
+      </Canvas>
+    </Canvas>
+    <!--
+
+    ************************ Application ************************
+
+-->
+    <Node Name="Application" Bounds="100,100" Id="Mh3n5kOsfIZM6We0AoR9F1">
+      <p:NodeReference>
+        <Choice Kind="ContainerDefinition" Name="Process" />
+        <FullNameCategoryReference ID="Primitive" />
+      </p:NodeReference>
+      <Patch Id="RJNwbPNX1rOPLVdJVQnpXz">
+        <Canvas Id="IUlmo2EMIlLPE65iTkWdk7" CanvasType="Group" />
+        <Patch Id="Iby0SHl5B2PMlkhd2n3SKm" Name="Create" />
+        <Patch Id="FcsDF8z9XF0MsOw5dRPm3q" Name="Update" />
+        <ProcessDefinition Id="J5W7QWiUwyrPtZCO3fBe2w">
+          <Fragment Id="EQmLnDDLQJbMtq7vIpnJhp" Patch="Iby0SHl5B2PMlkhd2n3SKm" Enabled="true" />
+          <Fragment Id="TjjjEesZKFyO7i5qcZHeVw" Patch="FcsDF8z9XF0MsOw5dRPm3q" Enabled="true" />
+        </ProcessDefinition>
+      </Patch>
+    </Node>
+  </Patch>
+  <NugetDependency Id="EzjkyeuUNQ0MwklaoFQjsD" Location="VL.CoreLib" Version="2021.3.3" />
+  <PlatformDependency Id="KdwQjnAbKtxPSKljbYIXDa" Location="./lib/net472/VL.CoreLib.Backports.dll" />
+</Document>

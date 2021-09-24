@@ -1,0 +1,29 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <TargetFramework>net472</TargetFramework>
+    <LangVersion>latest</LangVersion>
+    <Version>0.0.1</Version>
+
+    <OutputPath>..\lib</OutputPath>
+    <RootNamespace>VL.Lib.Backports</RootNamespace>
+    <IncludeFrameworkReferencesInPackage>false</IncludeFrameworkReferencesInPackage>
+
+    <Authors>vvvv group</Authors>
+    <Owners>$(Authors)</Owners>
+    <Year>$([System.DateTime]::Now.ToString('yyyy'))</Year>
+    <Copyright>Copyright © $(Year) by $(Authors). All rights reserved.</Copyright>
+    <PackageProjectUrl>http://vvvv.org</PackageProjectUrl>
+    <PackageLicenseExpression>LGPL-3.0-only</PackageLicenseExpression>
+    <Description>Backports functionality to older VL versions</Description>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <PackageReference Include="VL.CoreLib" Version="2021.3.2" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Content Include="..\*.vl" PackagePath="%(RecursiveDir)%(Filename)%(Extension)" />
+  </ItemGroup>
+
+</Project>

@@ -1,0 +1,8 @@
+{
+  "profiles": {
+    "VL.CoreLib.Backports": {
+      "commandName": "Executable",
+      "executablePath": "C:\\Program Files\\vvvv\\vvvv_gamma_2021.3.3\\vvvv.exe"
+    }
+  }
+}
