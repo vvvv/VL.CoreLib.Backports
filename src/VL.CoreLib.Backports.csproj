@@ -3,7 +3,7 @@
   <PropertyGroup>
     <TargetFramework>net472</TargetFramework>
     <LangVersion>latest</LangVersion>
-    <Version>0.0.1</Version>
+    <Version>0.0.2</Version>
 
     <OutputPath>..\lib</OutputPath>
     <RootNamespace>VL.Lib.Backports</RootNamespace>
@@ -19,7 +19,10 @@
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="VL.CoreLib" Version="2021.3.2" />
+    <PackageReference Include="VL.CoreLib" Version="2021.3.2">
+      <!-- Already shipped wih vvvv -->
+      <PrivateAssets>all</PrivateAssets>
+    </PackageReference>
   </ItemGroup>
 
   <ItemGroup>
